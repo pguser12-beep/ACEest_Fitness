@@ -1,11 +1,11 @@
 pipeline {
   agent any
   environment {
-    DOCKER_IMAGE = "yourdockerhub/aceest-fitness:${env.BUILD_NUMBER}"
+    DOCKER_IMAGE = "imp98/aceest-fitness:${env.BUILD_NUMBER}"
   }
   stages {
     stage('Checkout') {
-      steps { git 'https://github.com/your/repo.git' }
+      steps { git 'https://github.com/pguser12-beep/ACEest_Fitness.git' }
     }
     stage('Test') {
       steps {
